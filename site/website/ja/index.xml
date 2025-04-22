@@ -13,6 +13,9 @@
 	<file-name>index.xml</file-name>
 	<folder-name>ja</folder-name>
 	<disabled>false</disabled>
+	<localeCode_s>ja</localeCode_s>
+	<sourceLocaleCode_s>en<sourceLocaleCode_s>
+
 	<body_html>&lt;p&gt;&amp;nbsp;Example content here&lt;/p&gt;</body_html>
 	<createdDate>2025-04-22T03:34:37.898Z</createdDate>
 	<createdDate_dt>2025-04-22T03:34:37.898Z</createdDate_dt>
