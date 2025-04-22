@@ -31,7 +31,7 @@ class LocaleFieldsOnCopyContentTypeHook {
     }
 
     def run() {
-        log.info("Running {} for path {}", getClass().getSimpleName(), path)
+        //log.info("Running {} for path {}", getClass().getSimpleName(), path)
 
         def contentService = applicationContext.getBean("cstudioContentService")
         def document = contentLoader.getContent(site, path)
@@ -45,8 +45,8 @@ class LocaleFieldsOnCopyContentTypeHook {
         if (localeCodeElem && originLocaleCode) {
             if (originLocaleCode != pathLocaleCode) {
                 // If the locale is different, update the locale code, and keep the locale source ID
-                log.info("Original locale code ({}) is different from current locale code in path ({}). " +
-                        "Updating the locale field.", originLocaleCode, pathLocaleCode)
+                //log.info("Original locale code ({}) is different from current locale code in path ({}). " +
+                        //"Updating the locale field.", originLocaleCode, pathLocaleCode)
 
                 updateElement("localeCode_s", pathLocaleCode, localeCodeElem, rootElem)
 
@@ -67,8 +67,8 @@ class LocaleFieldsOnCopyContentTypeHook {
                                 def newPath = replaceElm.text.replace("/${originLocaleCode}/", "/${pathLocaleCode}/")
                                 def contentExists = contentService.contentExists(site, newPath)
                                 if (contentExists) {
-                                    log.info("Shared component ({}) exists for the element ({}). " +
-                                            "Updating the link.", newPath, "${element.getName()}.${itemElm.getName()}.${elementName}")
+                                    //log.info("Shared component ({}) exists for the element ({}). " +
+                                           // "Updating the link.", newPath, "${element.getName()}.${itemElm.getName()}.${elementName}")
                                     updateElement(elementName, newPath, replaceElm, rootElem)
                                 }
                             }
@@ -77,9 +77,9 @@ class LocaleFieldsOnCopyContentTypeHook {
                 }
             } else {
                 // If the locale is the same, create a new locale source ID
-                log.info("Original locale code ({}) is the same as current locale code in path ({}). " +
-                        "Generating new locale source ID and updating the source locale code to the current one",
-                        localeCodeElem.text, pathLocaleCode)
+                //log.info("Original locale code ({}) is the same as current locale code in path ({}). " +
+                        //"Generating new locale source ID and updating the source locale code to the current one",
+                        //localeCodeElem.text, pathLocaleCode)
 
                 updateElement("localeSourceId_s", UUID.randomUUID().toString(), localeSourceIdElem, rootElem)
                 updateElement("sourceLocaleCode_s", pathLocaleCode, sourceLocaleCodeElem, rootElem)
@@ -92,7 +92,7 @@ class LocaleFieldsOnCopyContentTypeHook {
     }
 
     def setLocaleOnUpdate() {
-        log.info("Running {} for path {} on UPDATE", getClass().getSimpleName(), path)
+        //log.info("Running {} for path {} on UPDATE", getClass().getSimpleName(), path)
         def contentService = applicationContext.getBean("cstudioContentService")
         def document = contentLoader.getContent(site, path)
         def rootElem = document.rootElement
@@ -101,7 +101,7 @@ class LocaleFieldsOnCopyContentTypeHook {
 
         // Locale code may vanish sometimes - re-compute it.
         if (pathLocaleCode != '' && localeCodeElem.text == '') {
-            log.info("Locale code is blank, but it is filed in a location that defines locale. Setting localeCode_s to ({}).", pathLocaleCode)
+            //log.info("Locale code is blank, but it is filed in a location that defines locale. Setting localeCode_s to ({}).", pathLocaleCode)
             updateElement("localeCode_s", pathLocaleCode, localeCodeElem, rootElem)
 
             // Write content
