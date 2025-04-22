@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/entry</content-type>
+	<display-template>/templates/web/entry.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>3546</objectGroupId>
+	<objectId>3546dd52-866f-9778-8dd3-08fad795517a</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>es</folder-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<disabled>false</disabled>
+	<internal-name>Home Page (ES)</internal-name>
+	<localeCode_s/>
+	<sourceLocaleCode_s/>
+	<title_t>Home Page (ES)</title_t>
+	<localeSourceId_s>8f50d69e-9f81-f859-62dd-9d5845ce86d5</localeSourceId_s>
+	<body_html>&lt;p&gt;Home Page (ES)&lt;/p&gt;</body_html>
+	<createdDate>2025-04-22T04:20:22.523Z</createdDate>
+	<createdDate_dt>2025-04-22T04:20:22.523Z</createdDate_dt>
+	<lastModifiedDate>2025-04-22T04:20:22.523Z</lastModifiedDate>
+	<lastModifiedDate_dt>2025-04-22T04:20:22.523Z</lastModifiedDate_dt>
+</page>
