@@ -10,14 +10,14 @@
 	<title_t>Example Child Page</title_t>
 	<placeInNav>false</placeInNav>
 	<orderDefault_f>-1</orderDefault_f>
-	<disabled>true</disabled>
+	<disabled>false</disabled>
 	<file-name>index.xml</file-name>
 	<folder-name>child-page</folder-name>
 	<body_html>&lt;p&gt;Example Child Page&lt;/p&gt;</body_html>
 	<createdDate>2025-04-22T03:36:15.310Z</createdDate>
 	<createdDate_dt>2025-04-22T03:36:15.310Z</createdDate_dt>
-	<lastModifiedDate>2025-04-22T03:44:41.135Z</lastModifiedDate>
-	<lastModifiedDate_dt>2025-04-22T03:44:41.135Z</lastModifiedDate_dt>
+	<lastModifiedDate>2025-04-22T03:45:07.796Z</lastModifiedDate>
+	<lastModifiedDate_dt>2025-04-22T03:45:07.796Z</lastModifiedDate_dt>
 	<localeCode_s/>
 	<sourceLocaleCode_s/>
 	<localeSourceId_s>66b43d3c-7755-499b-52b5-b6dec13d85ac</localeSourceId_s>
