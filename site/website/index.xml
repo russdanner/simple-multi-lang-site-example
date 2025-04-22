@@ -1,40 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C) 2007-2022 Crafter Software Corporation. All Rights Reserved.
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License version 3 as published by
-  ~ the Free Software Foundation.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  --><page>
-  <content-type>/page/entry</content-type>
-  <display-template>/templates/web/entry.ftl</display-template>
-  <merge-strategy>inherit-levels</merge-strategy>
-  <placeInNav>false</placeInNav>
-  <file-name>index.xml</file-name>
-  <internal-name>Home</internal-name>
-  <orderDefault_f>-1</orderDefault_f>
-  <body_html><![CDATA[<h1>This is the "Global Home"</h1>
-<p>This configuration feaures:</p>
-<ul>
-<li>A global home page. This can also be a redirect to the user's browser locale, or the default locale etc<br><br></li>
-<li>A fallback configuration. The base language is currently set to <strong>en<br><br></strong></li>
-<li>The smart-copy translation plugin. This plugin is a workflow plugin that allows authors will scope pages into "translation" by copying them from one locale to another.&nbsp; Once copied, a translation workflow (automated, assistend or manual can take place.)&nbsp;</li>
-</ul>]]></body_html>
-  <objectGroupId>8d7f</objectGroupId>
-  <objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
-  <folder-name/>
-  <createdDate>2017-01-31T16:18:14.000Z</createdDate>
-  <createdDate_dt>2017-01-31T16:18:14.000Z</createdDate_dt>
-  <lastModifiedDate>2025-04-22T03:31:13.910Z</lastModifiedDate>
-  <lastModifiedDate_dt>2025-04-22T03:31:13.910Z</lastModifiedDate_dt>
-  <title_t><![CDATA[Localized Site Example]]></title_t>
-  <disabled>false</disabled>
+<page>
+	<content-type>/page/entry</content-type>
+	<display-template>/templates/web/entry.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<placeInNav>false</placeInNav>
+	<file-name>index.xml</file-name>
+	<internal-name>Home</internal-name>
+	<orderDefault_f>-1</orderDefault_f>
+	<body_html>&lt;h1&gt;This is the "Global Home"&lt;/h1&gt;
+&lt;p&gt;This configuration feaures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A global home page. This can also be a redirect to the user's browser locale, or the default locale etc&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;A fallback configuration. The base language is currently set to &lt;strong&gt;en&lt;br&gt;&lt;br&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The smart-copy translation plugin. This plugin is a workflow plugin that allows authors will scope pages into "translation" by copying them from one locale to another.&amp;nbsp; Once copied, a translation workflow (automated, assistend or manual can take place.)&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;</body_html>
+	<objectGroupId>8d7f</objectGroupId>
+	<objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
+	<folder-name/>
+	<createdDate>2017-01-31T16:18:14.000Z</createdDate>
+	<createdDate_dt>2017-01-31T16:18:14.000Z</createdDate_dt>
+	<lastModifiedDate>2025-04-22T03:44:18.547Z</lastModifiedDate>
+	<lastModifiedDate_dt>2025-04-22T03:44:18.547Z</lastModifiedDate_dt>
+	<title_t>Localized Site Example</title_t>
+	<disabled>false</disabled>
+	<localeCode_s/>
+	<sourceLocaleCode_s/>
+	<localeSourceId_s>abaa8c81-315a-8242-99ce-63da1401091d</localeSourceId_s>
 </page>
