@@ -6,18 +6,18 @@
 	<merge-strategy>inherit-levels</merge-strategy>
 	<objectGroupId>1ded9fb4</objectGroupId>
 	<objectId>1ded9fb4-1c0a-4039-b559-e93e7a0e91a9</objectId>
-	<internal-name>Example Child Page</internal-name>
-	<title_t>Example Child Page</title_t>
+	<internal-name>Example Child Page (ES)</internal-name>
+	<title_t>Example Child Page (ES)</title_t>
 	<placeInNav>false</placeInNav>
-	<orderDefault_f>0.0</orderDefault_f>
+	<orderDefault_f>-1</orderDefault_f>
 	<disabled>false</disabled>
 	<file-name>index.xml</file-name>
 	<folder-name>child-page</folder-name>
-	<body_html>&lt;p&gt;Example Child Page&lt;/p&gt;</body_html>
+	<body_html>&lt;p&gt;Example Child Page (ES)&lt;/p&gt;</body_html>
 	<createdDate>2025-04-22T04:22:00.530Z</createdDate>
 	<createdDate_dt>2025-04-22T04:22:00.530Z</createdDate_dt>
-	<lastModifiedDate>2025-04-22T04:22:00.530Z</lastModifiedDate>
-	<lastModifiedDate_dt>2025-04-22T04:22:00.530Z</lastModifiedDate_dt>
+	<lastModifiedDate>2025-04-22T04:22:12.448Z</lastModifiedDate>
+	<lastModifiedDate_dt>2025-04-22T04:22:12.448Z</lastModifiedDate_dt>
 	<localeCode_s>es</localeCode_s>
 	<sourceLocaleCode_s>en</sourceLocaleCode_s>
 	<localeSourceId_s>66b43d3c-7755-499b-52b5-b6dec13d85ac</localeSourceId_s>
