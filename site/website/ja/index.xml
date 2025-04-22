@@ -7,7 +7,7 @@
   <objectGroupId>a738</objectGroupId>
   <objectId>a73846be-ec68-8e00-559f-fcba0a0a5437</objectId>
   <internal-name>Home Page (JA)</internal-name>
-  <title_t>Home Page (JA)</title_t>
+  <title_t><![CDATA[子ページの例 (JA)]]></title_t>
   <placeInNav>false</placeInNav>
   <orderDefault_f>-1</orderDefault_f>
   <file-name>index.xml</file-name>
@@ -18,7 +18,7 @@
   <body_html><![CDATA[<pre>子ページのコンテンツの例</pre>]]></body_html>
   <createdDate>2025-04-22T03:34:37.898Z</createdDate>
   <createdDate_dt>2025-04-22T03:34:37.898Z</createdDate_dt>
-  <lastModifiedDate>2025-04-22T04:06:10.308Z</lastModifiedDate>
-  <lastModifiedDate_dt>2025-04-22T04:06:10.308Z</lastModifiedDate_dt>
+  <lastModifiedDate>2025-04-22T04:06:36.345Z</lastModifiedDate>
+  <lastModifiedDate_dt>2025-04-22T04:06:36.345Z</lastModifiedDate_dt>
   <localeSourceId_s>ea6ff0ab-5984-1ff2-4fa3-da4af70133b2</localeSourceId_s>
 </page>
