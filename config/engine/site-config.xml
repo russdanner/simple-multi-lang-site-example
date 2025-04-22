@@ -26,7 +26,7 @@
         <enabled>true</enabled>
         <rootFolders>/site/website</rootFolders>
         <excludePatterns>/site/website/index\.xml</excludePatterns>
-        <availableTargetIds>en,ja,es,fr,zn</availableTargetIds>
+        <availableTargetIds>en,ja,es,fr,zh</availableTargetIds>
         <fallbackTargetId>en</fallbackTargetId>
         <mergeFolders>true</mergeFolders>
         <redirectToTargetedUrl>false</redirectToTargetedUrl>
