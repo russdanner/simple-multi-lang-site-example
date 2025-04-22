@@ -20,22 +20,13 @@
   <templates> 
     <allowed>/?static-assets/(app|images/social)/.*</allowed> 
   </templates>  
-  <filters> 
-    <!--filter> 
-      <script>/scripts/filters/SSO.groovy</script>  
-      <mapping> 
-        <include>/**</include> 
-      </mapping> 
-    </filter--> 
-  </filters> 
-
 
     <!-- Content targeting properties -->
     <targeting>
         <enabled>true</enabled>
         <rootFolders>/site/website</rootFolders>
         <excludePatterns>/site/website/index\.xml</excludePatterns>
-        <availableTargetIds>en,ja,ja_JP,ja_JP_JP,es,fr</availableTargetIds>
+        <availableTargetIds>en,ja,ja_JP,ja_JP_JP,es,fr,zn</availableTargetIds>
         <fallbackTargetId>en</fallbackTargetId>
         <mergeFolders>true</mergeFolders>
         <redirectToTargetedUrl>false</redirectToTargetedUrl>
