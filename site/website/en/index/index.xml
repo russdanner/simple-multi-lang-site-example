@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/entry</content-type>
+	<display-template>/templates/web/entry.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>a60a</objectGroupId>
+	<objectId>a60a94c5-cd21-6e1a-65c1-fd40d64d77d0</objectId>
+	<internal-name>EN Home</internal-name>
+	<title_t>EN Home Page</title_t>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<disabled>false</disabled>
+	<file-name>index.xml</file-name>
+	<folder-name>index</folder-name>
+	<body_html>&lt;p&gt;This is an example EN Home page&lt;/p&gt;</body_html>
+	<createdDate>2025-04-22T03:31:31.311Z</createdDate>
+	<createdDate_dt>2025-04-22T03:31:31.311Z</createdDate_dt>
+	<lastModifiedDate>2025-04-22T03:31:31.311Z</lastModifiedDate>
+	<lastModifiedDate_dt>2025-04-22T03:31:31.311Z</lastModifiedDate_dt>
+</page>
