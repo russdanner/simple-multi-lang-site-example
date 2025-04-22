@@ -1,5 +1,4 @@
-import scripts.libs.CommonLifecycleApi
-import java.util.UUID
+import scripts.libs.CommonLifecycleApi;
 import groovy.util.logging.Slf4j
 import org.dom4j.DocumentHelper
 
@@ -25,7 +24,7 @@ class LocaleFieldsOnCopyContentTypeHook {
             elem.text = text
         } else {
             def newElem = DocumentHelper.createElement(name)
-                newElem.text = text
+            newElem.text = text
 
             rootElement.add(newElem)
         }
@@ -47,7 +46,7 @@ class LocaleFieldsOnCopyContentTypeHook {
             if (originLocaleCode != pathLocaleCode) {
                 // If the locale is different, update the locale code, and keep the locale source ID
                 log.info("Original locale code ({}) is different from current locale code in path ({}). " +
-                         "Updating the locale field.", originLocaleCode, pathLocaleCode)
+                        "Updating the locale field.", originLocaleCode, pathLocaleCode)
 
                 updateElement("localeCode_s", pathLocaleCode, localeCodeElem, rootElem)
 
@@ -69,7 +68,7 @@ class LocaleFieldsOnCopyContentTypeHook {
                                 def contentExists = contentService.contentExists(site, newPath)
                                 if (contentExists) {
                                     log.info("Shared component ({}) exists for the element ({}). " +
-                                             "Updating the link.", newPath, "${element.getName()}.${itemElm.getName()}.${elementName}")
+                                            "Updating the link.", newPath, "${element.getName()}.${itemElm.getName()}.${elementName}")
                                     updateElement(elementName, newPath, replaceElm, rootElem)
                                 }
                             }
@@ -79,8 +78,8 @@ class LocaleFieldsOnCopyContentTypeHook {
             } else {
                 // If the locale is the same, create a new locale source ID
                 log.info("Original locale code ({}) is the same as current locale code in path ({}). " +
-                         "Generating new locale source ID and updating the source locale code to the current one",
-                         localeCodeElem.text, pathLocaleCode)
+                        "Generating new locale source ID and updating the source locale code to the current one",
+                        localeCodeElem.text, pathLocaleCode)
 
                 updateElement("localeSourceId_s", UUID.randomUUID().toString(), localeSourceIdElem, rootElem)
                 updateElement("sourceLocaleCode_s", pathLocaleCode, sourceLocaleCodeElem, rootElem)
@@ -89,30 +88,51 @@ class LocaleFieldsOnCopyContentTypeHook {
 
         // Write content
         def is = new ByteArrayInputStream(document.asXML().getBytes('UTF-8'))
-            contentService.writeContent(site, path, is)
+        contentService.writeContent(site, path, is)
     }
+
+    def setLocaleOnUpdate() {
+        log.info("Running {} for path {} on UPDATE", getClass().getSimpleName(), path)
+        def contentService = applicationContext.getBean("cstudioContentService")
+        def document = contentLoader.getContent(site, path)
+        def rootElem = document.rootElement
+        def localeCodeElem = rootElem.selectSingleNode("localeCode_s")
+        def pathLocaleCode = getLocaleFromPath(path)
+
+        // Locale code may vanish sometimes - re-compute it.
+        if (pathLocaleCode != '' && localeCodeElem.text == '') {
+            log.info("Locale code is blank, but it is filed in a location that defines locale. Setting localeCode_s to ({}).", pathLocaleCode)
+            updateElement("localeCode_s", pathLocaleCode, localeCodeElem, rootElem)
+
+            // Write content
+            def is = new ByteArrayInputStream(document.asXML().getBytes('UTF-8'))
+            contentService.writeContent(site, path, is)
+        }
+   }
 
 }
 
-def contentLifecycleParams =[:]
-    contentLifecycleParams.site = site
-    contentLifecycleParams.path = path
-    contentLifecycleParams.user = user
-    contentLifecycleParams.contentType = contentType
-    contentLifecycleParams.contentLifecycleOperation = contentLifecycleOperation
-    contentLifecycleParams.contentLoader = contentLoader
-    contentLifecycleParams.applicationContext = applicationContext
+def contentLifecycleParams =[:];
+contentLifecycleParams.site = site;
+contentLifecycleParams.path = path;
+contentLifecycleParams.user = user;
+contentLifecycleParams.contentType = contentType;
+contentLifecycleParams.contentLifecycleOperation = contentLifecycleOperation;
+contentLifecycleParams.contentLoader = contentLoader;
+contentLifecycleParams.applicationContext = applicationContext;
 
-// Only run if it's a copy or a duplicate
+def hook = new LocaleFieldsOnCopyContentTypeHook()
+hook.site = site
+hook.path = path
+hook.contentLoader = contentLoader
+hook.applicationContext = applicationContext
+
+if (contentLifecycleOperation == "UPDATE") {
+    hook.setLocaleOnUpdate()
+}
 if (contentLifecycleOperation == "COPY" || contentLifecycleOperation == "DUPLICATE") {
-    def hook = new LocaleFieldsOnCopyContentTypeHook()
-        hook.site = site
-        hook.path = path
-        hook.contentLoader = contentLoader
-        hook.applicationContext = applicationContext
-
     hook.run()
 }
 
-def controller = new CommonLifecycleApi(contentLifecycleParams)
-controller.execute()
+def controller = new CommonLifecycleApi(contentLifecycleParams);
+controller.execute();
