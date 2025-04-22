@@ -7,15 +7,18 @@
 	<objectGroupId>8375cd82</objectGroupId>
 	<objectId>8375cd82-46f5-440a-b1de-49967f5b25b7</objectId>
 	<internal-name>Example Child Page</internal-name>
-	<title_t>Example Child Page</title_t>
+	<title_t>示例子页面</title_t>
 	<placeInNav>false</placeInNav>
-	<orderDefault_f>0.0</orderDefault_f>
+	<orderDefault_f>-1</orderDefault_f>
 	<disabled>false</disabled>
 	<file-name>index.xml</file-name>
 	<folder-name>child-page</folder-name>
-	<body_html>&lt;p&gt;Example Child Page&lt;/p&gt;</body_html>
+	<body_html>&lt;div&gt;
+&lt;pre&gt;子页面内容示例&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;</body_html>
 	<createdDate>2025-04-22T03:37:05.352Z</createdDate>
 	<createdDate_dt>2025-04-22T03:37:05.352Z</createdDate_dt>
-	<lastModifiedDate>2025-04-22T03:37:05.352Z</lastModifiedDate>
-	<lastModifiedDate_dt>2025-04-22T03:37:05.352Z</lastModifiedDate_dt>
+	<lastModifiedDate>2025-04-22T03:37:06.665Z</lastModifiedDate>
+	<lastModifiedDate_dt>2025-04-22T03:37:06.665Z</lastModifiedDate_dt>
 </page>
