@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/entry</content-type>
+	<display-template>/templates/web/entry.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>568e</objectGroupId>
+	<objectId>568e0b5b-f107-5c16-d87b-8999f6f8c20b</objectId>
+	<internal-name>Example Child Page</internal-name>
+	<title_t>Example Child Page</title_t>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<disabled>false</disabled>
+	<file-name>index.xml</file-name>
+	<folder-name>child-page</folder-name>
+	<body_html>&lt;p&gt;Example Child Page&lt;/p&gt;</body_html>
+	<createdDate>2025-04-22T03:36:15.310Z</createdDate>
+	<createdDate_dt>2025-04-22T03:36:15.310Z</createdDate_dt>
+	<lastModifiedDate>2025-04-22T03:36:15.310Z</lastModifiedDate>
+	<lastModifiedDate_dt>2025-04-22T03:36:15.310Z</lastModifiedDate_dt>
+</page>
