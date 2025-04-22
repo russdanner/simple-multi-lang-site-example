@@ -22,24 +22,19 @@
   <internal-name>Home</internal-name>
   <orderDefault_f>-1</orderDefault_f>
   <body_html><![CDATA[<h1>This is the "Global Home"</h1>
-<p>This project blueprint is the equivalent of a Hello World. It's a blank slate on which you can build your own digital experience.</p>
+<p>This configuration feaures:</p>
 <ul>
-<li>To create new content types use the Project Tools &gt; Content Types menu on the left Sidebar</li>
-<li>To update markup, edit this template by clicking on the Options menu on the top toolbar and select "Edit Template"</li>
-<li>To modify this text, hover/click on it or use the options menu and select "Edit" on the top toolbar</li>
-<li>Crafter documentation can be found <a href="https://craftercms.com/docs" target="_blank" rel="noopener">here</a></li>
-<li>CrafterCMS authoring and developer training is available. Please contact <a href="mailto:info@craftercms.com">info@craftercms.com</a></li>
-</ul>
-<div>
-<p>This content is managed by the form. &nbsp;Click edit to change OR in the upper right hand corner, click the pencil to turn on edit mode.</p>
-</div>]]></body_html>
+<li>A global home page. This can also be a redirect to the user's browser locale, or the default locale etc<br><br></li>
+<li>A fallback configuration. The base language is currently set to <strong>en<br><br></strong></li>
+<li>The smart-copy translation plugin. This plugin is a workflow plugin that allows authors will scope pages into "translation" by copying them from one locale to another.&nbsp; Once copied, a translation workflow (automated, assistend or manual can take place.)&nbsp;</li>
+</ul>]]></body_html>
   <objectGroupId>8d7f</objectGroupId>
   <objectId>8d7f21fa-5e09-00aa-8340-853b7db302da</objectId>
   <folder-name/>
   <createdDate>2017-01-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-01-31T16:18:14.000Z</createdDate_dt>
-  <lastModifiedDate>2025-04-22T03:26:44.396Z</lastModifiedDate>
-  <lastModifiedDate_dt>2025-04-22T03:26:44.396Z</lastModifiedDate_dt>
+  <lastModifiedDate>2025-04-22T03:31:13.910Z</lastModifiedDate>
+  <lastModifiedDate_dt>2025-04-22T03:31:13.910Z</lastModifiedDate_dt>
   <title_t><![CDATA[Localized Site Example]]></title_t>
   <disabled>false</disabled>
 </page>
